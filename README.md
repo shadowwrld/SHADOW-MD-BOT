@@ -10,10 +10,10 @@
 
 </p>
 <p align="center">
-<a href="https://github.com/carlydopeboii"><img title="Author" src="https://img.shields.io/badge/carlydopeboii-black?style=for-the-badge&logo=Github"></a> <a href="https://wa.me/18098042883"><img title="Author" src="https://img.shields.io/badge/CHAT US-black?style=for-the-badge&logo=whatsapp"></a>
+<a href="https://github.com/ShadowWrld"><img title="Author" src="https://img.shields.io/badge/carlydopeboii-black?style=for-the-badge&logo=Github"></a> <a href="https://wa.me/18098042883"><img title="Author" src="https://img.shields.io/badge/CHAT US-black?style=for-the-badge&logo=whatsapp"></a>
 <p/>
 <p align="center">
-<a href="https://github.com/carlydopeboii?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/carlydopeboii?label=Followers&style=social"></a>
+<a href="https://github.com/ShadowWrld?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/ShadowWrld?label=Followers&style=social"></a>
 </p></a>                     
 
    
@@ -64,7 +64,7 @@
 > HOW TO REACH THE OWNER? 
  
    
-   <a href="https://wa.me/18098042883">
+   <a href="https://wa.me/2250701557807">
     <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
   </a>&nbsp;&nbsp;
    <a
@@ -76,7 +76,7 @@
 ## STEPS TO DEPLOY YOUR BOT
 
 
-> 1, Star the repo up there then click Here To  [`FORK`](https://github.com/carlydopeboii/SHADOW-MD-BOT/fork)
+> 1, Star the repo up there then click Here To  [`FORK`](https://github.com/ShadowWrld/SHADOW-MD-BOT/fork)
 
 > 2, TAP ON GET SESSIONS
 

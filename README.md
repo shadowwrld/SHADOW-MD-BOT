@@ -10,7 +10,7 @@
 
 </p>
 <p align="center">
-<a href="https://github.com/ShadowWrld"><img title="Author" src="https://img.shields.io/badge/carlydopeboii-black?style=for-the-badge&logo=Github"></a> <a href="https://wa.me/18098042883"><img title="Author" src="https://img.shields.io/badge/CHAT US-black?style=for-the-badge&logo=whatsapp"></a>
+<a href="https://github.com/ShadowWrld"><img title="Author" src="https://img.shields.io/badge/Shadow-Wrld-black?style=for-the-badge&logo=Github"></a> <a href="https://wa.me/2250701557807"><img title="Author" src="https://img.shields.io/badge/CHAT US-black?style=for-the-badge&logo=whatsapp"></a>
 <p/>
 <p align="center">
 <a href="https://github.com/ShadowWrld?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/ShadowWrld?label=Followers&style=social"></a>

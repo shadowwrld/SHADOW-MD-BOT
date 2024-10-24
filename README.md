@@ -1,5 +1,5 @@
 <p align="center">
- <img alt="wasi" height="300" src="https://telegra.ph/file/c9c0af94510158016f7c6.jpg">
+ <img alt="wasi" height="300" src="https://i.imgur.com/Rj3JuBi.jpeg">
 
 
   <h1 align="center">𝐒𝐇𝐀𝐃𝐎𝐖 𝐌𝐔𝐋𝐓𝐈 𝐃𝐄𝐕𝐈𝐂𝐄 </h1>

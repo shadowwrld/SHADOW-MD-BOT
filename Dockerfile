@@ -9,7 +9,7 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/carlydopeboii/SHADOW-MD-BOT  /root/shadowmd
+RUN git clone https://github.com/ShadowWrld/SHADOW-MD-BOT  /root/shadowmd
 WORKDIR /root/shadowmd/
 
 

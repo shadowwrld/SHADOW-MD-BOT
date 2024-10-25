@@ -37,7 +37,7 @@
 
 ***
 
-- <a href="https://dashboard.heroku.com/new?button-url=https://github.com/carlydopeboii/SHADOW-MD-BOT&template=https://github.com/carlydopeboii/SHADOW-MD-BOT"><img title="Deploy On Render" src="https://img.shields.io/badge/DEPLOY ON HEROKU-h?color=yellow&style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+- <a href="https://dashboard.heroku.com/new?button-url=https://github.com/ShadowWrld/SHADOW-MD-BOT&template=https://github.com/ShadowWrld/SHADOW-MD-BOT"><img title="Deploy On Render" src="https://img.shields.io/badge/DEPLOY ON HEROKU-h?color=yellow&style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
 ***
@@ -88,6 +88,88 @@
 
 </p>
 
+## DEPLOIEMENT SUR RENDER
+
+> 1. Si vous n'avez pas de compte **Render**, cliquez [**Ici**](https://dashboard.render.com) pour vous inscrire.
+> 2. Créez un nouveau web service.
+> 3. Choisissez **Public Git Repository**.
+> 4. Dans le champ , Entrez `https://gitlab.com/bankai421341/senbonzakura.git`
+> 5. Cliquez sur **Connect**.
+> 6. Sélectionnez le **Free Plan** si vous ne voulez pas payer.
+> 7. Dans la section **Environemment Variable**, cliquez sur **Add From .env** et copiez le contenu suivant :
+
+     ```env
+     PREFIXE=*
+     LECTURE_AUTO_STATUS=oui
+     TELECHARGER_AUTO_STATUS=oui
+     NOM_BOT=Zokou-MD
+     LIENS_MENU=https://wallpapercave.com/uwp/uwp3943464.jpeg
+     PM_PERMIT=non
+     MODE_PUBLIC=oui
+     ETAT=1
+     SESSION_ID=zokk
+     NOM_OWNER=Djalega++
+     NUMERO_OWNER=22891733300
+     WARN_COUNT=3
+     STARTING_BOT_MESSAGE=oui
+     ANTI_VUE_UNIQUE=oui
+     PM_CHATBOT=non
+     DATABASE_URL=postgresql://zokouvf_user:rAzO0xc7jeW5fN2Ts912VpnNyc7dCCWj@dpg-cs9kumi3esus739h5neg-a.oregon-postgres.render.com/zokouvf
+     ANTI_COMMAND_SPAM=non
+      ```
+
+> 8. Cliquez sur **Add env** pour enregistrer, puis  odifiez selon vos besoins. N'oubliez pas d'entrer votre Session ID.
+> 9. Cliquez sur **Deploy Service** et Profitez-en !
+
+</p>
+
+## **Déploiement GitHub**
+       
+> 1. **Fork Le REPO**.
+> 2. Modifiez le fichier `exemple_de_set.env` en `set.env` et ajoutez-y votre **Session_ID**.
+> 3. Créez un nouveau fichier `.github/workflows/deploy.yml` et mettez-y ce contenu :
+
+```yml
+name: Node.js CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: '0 */4 * * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: |
+        npm install -g pm2
+        npm install
+
+    - name: Start application with timeout
+      run: |
+        timeout 14520s npm run zokou
+
+```
 
 
 

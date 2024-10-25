@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: SHADOW-MD
-    env: docker
-    region: Frankfurt
-    plan: free
-    dockerfilePath: Dockerfile
-

@@ -13,7 +13,7 @@ zokou({
 }, async (origineMessage, zk, commandeOptions) => {
   const { ms, msgRepondu, arg, repondre, nomAuteurMessage } = commandeOptions;
 
-  zk.sendMessage(origineMessage, { text: "*COMMANDE DEVELOPPÉ Par SHADOW-WRLD, un développeur HAÏTIEN🇭🇹*" });
+  zk.sendMessage(origineMessage, { text: "ᴄᴏᴍᴍᴀɴᴅᴇ ᴅᴇᴠᴇʟᴏᴘᴘÉ ᴘᴀʀ sʜᴀᴅᴏᴡ-ᴡʀʟᴅ" });
 
   try {
     const repoUrl = "https://api.github.com/repos/ShadowWrld/SHADOW-MD-BOT";
@@ -33,7 +33,7 @@ zokou({
     const filesToUpdate = filesChanged.filter(file => localFiles.includes(file.filename));
 
     if (filesToUpdate.length === 0) {
-      return repondre("Pas de mise à jour détecté pour le moment.");
+      return repondre("ᴘᴀs ᴅᴇ ᴍɪsᴇ à ᴊᴏᴜʀ ᴅéᴛᴇᴄᴛé ᴘᴏᴜʀ ʟᴇ ᴍᴏᴍᴇɴᴛ.ᴘᴀs ᴅᴇ ᴍɪsᴇ à ᴊᴏᴜʀ ᴅéᴛᴇᴄᴛé ᴘᴏᴜʀ ʟᴇ ᴍᴏᴍᴇɴᴛ.");
     }
 
     repondre(`Mise à jour nécessaire pour les(s) fichiers : ${filesToUpdate.map(file => file.filename).join(", ")}`);
@@ -48,7 +48,7 @@ zokou({
       repondre(`Fichier mis à jour : ${file.filename}`);
     }
 
-    repondre("Mise à jour Terminé avec succès.");
+    repondre("ᴍɪsᴇ à ᴊᴏᴜʀ ᴛᴇʀᴍɪɴé ᴀᴠᴇᴄ sᴜᴄᴄès.");
   } catch (error) {
     repondre(`Error during update: ${error.message}`);
   }

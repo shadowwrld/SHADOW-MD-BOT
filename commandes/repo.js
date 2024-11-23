@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const { zokou } = require("../framework/zokou");
 
 zokou({ nomCom: "repo", catégorie:"Général", reaction: "🌏", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
-  const githubRepo = 'https://api.github.com/repos/carlydopeboii/SHADOW-MD-BOT';
+  const githubRepo = 'https://api.github.com/repos/ShadowWrld/SHADOW-MD-BOT';
   const img = 'https://telegra.ph/file/c9c0af94510158016f7c6.jpg';
 
   try {

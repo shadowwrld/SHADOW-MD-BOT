@@ -2,36 +2,42 @@ import fs from 'fs';
 import acrcloud from 'acrcloud';
 import config from '../../set.cjs';
 
-
+// Initialize ACRCloud with your credentials
 const acr = new acrcloud({
-host: 'identify-eu-west-1.acrcloud.com',
-access_key: '716b4ddfa557144ce0a459344fe0c2c9',
-access_secret: 'Lz75UbI8g6AzkLRQgTgHyBlaQq9YT5wonr3xhFkf'
+  host: 'identify-eu-west-1.acrcloud.com',
+  access_key: '716b4ddfa557144ce0a459344fe0c2c9',
+  access_secret: 'Lz75UbI8g6AzkLRQgTgHyBlaQq9YT5wonr3xhFkf'
 });
 
+// Shazam function to identify music
 const shazam = async (m, gss) => {
   try {
     const prefix = config.PREFIX;
-const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
-const text = m.body.slice(prefix.length + cmd.length).trim();
+    const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+    const text = m.body.slice(prefix.length + cmd.length).trim();
 
+    // List of valid commands
     const validCommands = ['shazam', 'find', 'whatmusic'];
     if (!validCommands.includes(cmd)) return;
-    
+
     const quoted = m.quoted || {}; 
 
+    // Check if the quoted message is audio or video
     if (!quoted || (quoted.mtype !== 'audioMessage' && quoted.mtype !== 'videoMessage')) {
       return m.reply('You asked about music. Please provide a quoted audio or video message for identification.');
     }
 
     const mime = m.quoted.mimetype;
+
     try {
+      // Download the quoted media
       const media = await m.quoted.download();
       const filePath = `./${Date.now()}.mp3`;
       fs.writeFileSync(filePath, media);
 
       m.reply('Identifying the music, please wait...');
 
+      // Identify the music using ACRCloud
       const res = await acr.identify(fs.readFileSync(filePath));
       const { code, msg } = res.status;
 
@@ -39,6 +45,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
         throw new Error(msg);
       }
 
+      // Retrieve metadata from the result
       const { title, artists, album, genres, release_date } = res.metadata.music[0];
       const txt = `𝚁𝙴𝚂𝚄𝙻𝚃 
       • 📌 *TITLE*: ${title}
@@ -48,6 +55,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
       • 📆 RELEASE DATE: ${release_date || 'NOT FOUND'}
       `.trim();
 
+      // Clean up the temporary file
       fs.unlinkSync(filePath);
       m.reply(txt);
     } catch (error) {

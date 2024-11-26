@@ -1,6 +1,7 @@
 const { zokou } = require("../framework/zokou");
 const axios = require("axios");
-/* Je ne suis pas l’auteur se cette commande c’est le travail d’une IA */
+
+/* Je ne suis pas l’auteur de cette commande, c’est le travail d’une IA */
 zokou({
   nomCom: "meteo",
   categorie: "SHADOW",
@@ -36,6 +37,7 @@ zokou({
     const windSpeed = data.current_weather.windspeed;
     const weatherCode = data.current_weather.weathercode;
     const weatherDescription = getWeatherDescription(weatherCode);
+
     const weatherInfo = `Météo à ${ville}:\nTempérature: ${temperature}°C\nVitesse du vent: ${windSpeed} m/s\nDescription: ${weatherDescription}`;
     zk.sendMessage(origineMessage, { text: weatherInfo });
   } catch (error) {

@@ -20,11 +20,13 @@ zokou({ nomCom: "appel", categorie: "Groupe", reaction: "📣" }, async (dest, z
     let tag = `
 ╭─────────────━┈⊷
 │🍷 𝐒𝐇𝐀𝐃𝐎𝐖 𝐌𝐃 𝐓𝐀𝐆 🍷
-╰─────────────━┈⊷
-│👥 Group : ${nomGroupe}
-│👤 Hey😀 : ${nomAuteurMessage}
-│📜 Message : ${mess}
-╰─────────────━┈⊷
+╰─────────────━┈⊷ \n
+╭─────────────━┈⊷
+│👥 ɢʀᴏᴜᴘᴇ : ${nomGroupe}
+│👤 ʜᴇʏ😀 : ${nomAuteurMessage}
+│📜 ᴍᴇssᴀɢᴇ : ${mess}
+╰─────────────━┈⊷\n
+\n
 `;
 
     const emoji = ['🍷', '👀', '😮‍💨', '❌', '🕸️', '😇', '⚙️', '🍑', '🎊', '😡', '🙏🏿', '✨', '$', '😟', '🥵', '🐅'];
@@ -44,13 +46,13 @@ zokou({ nomCom: "appel", categorie: "Groupe", reaction: "📣" }, async (dest, z
 // Command for sending group link
 zokou({ nomCom: "lien", categorie: "Groupe", reaction: "🙋" }, async (dest, zk, commandeOptions) => {
     const { repondre, nomGroupe, nomAuteurMessage, verifGroupe } = commandeOptions;
-    if (!verifGroupe) { repondre("Wait bro, tu veux le lien de mon DM?"); return; };
+    if (!verifGroupe) { repondre("ᴡᴀɪᴛ ʙʀᴏ, ᴛᴜ ᴠᴇᴜx ʟᴇ ʟɪᴇɴ ᴅᴇ ᴍᴏɴ ᴅᴍ?"); return; };
 
-    const link = await zk.groupInviteCode(dest);
-    const lien = `https://chat.whatsapp.com/${link}`;
+    var link = await zk.groupInviteCode(dest);
+    var lien = https://chat.whatsapp.com/${link};
 
-    const mess = `Salut ${nomAuteurMessage}, voici le lien du groupe ${nomGroupe}\nLien : ${lien}`;
-    repondre(mess);
+    let mess = `sᴀʟᴜᴛ ${nomAuteurMessage}, ᴠᴏɪᴄɪ ʟᴇ ʟɪᴇɴ ᴅᴜ ɢʀᴏᴜᴘᴇ ${nomGroupe}\nʟɪᴇɴ : ${lien}`;
+    repondre(mess)
 });
 
 // Command to promote a member to admin
@@ -99,19 +101,19 @@ zokou({ nomCom: "nommer", categorie: "Groupe", reaction: "👨🏿‍💼" }, as
                             await zk.groupParticipantsUpdate(dest, [auteurMsgRepondu], "promote");
                             zk.sendMessage(dest, { text: txt, mentions: [auteurMsgRepondu] });
                         } else {
-                            return repondre("Ce membre est déjà administrateur du groupe.");
+                            return repondre("ᴄᴇ ᴍᴇᴍʙʀᴇ ᴇsᴛ ᴅéᴊà ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴇᴜʀ ᴅᴜ ɢʀᴏᴜᴘᴇ.");
                         }
                     } else {
-                        return repondre("Cet utilisateur ne fait pas partie du groupe.");
+                        return repondre("ᴄᴇᴛ ᴜᴛɪʟɪsᴀᴛᴇᴜʀ ɴᴇ ғᴀɪᴛ ᴘᴀs ᴘᴀʀᴛɪᴇ ᴅᴜ ɢʀᴏᴜᴘᴇ.");
                     }
                 } else {
-                    return repondre("Désolé, je ne peux pas effectuer cette action car je ne suis pas administrateur du groupe.");
+                    return repondre("ᴅésᴏʟé, ᴊᴇ ɴᴇ ᴘᴇᴜx ᴘᴀs ᴇғғᴇᴄᴛᴜᴇʀ ᴄᴇᴛᴛᴇ ᴀᴄᴛɪᴏɴ ᴄᴀʀ ᴊᴇ ɴᴇ sᴜɪs ᴘᴀs ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴇᴜʀ ᴅᴜ ɢʀᴏᴜᴘᴇ.");
                 }
             } else {
-                repondre("Veuillez taguer le membre à nommer.");
+                repondre("ᴠᴇᴜɪʟʟᴇᴢ ᴛᴀɢᴜᴇʀ ʟᴇ ᴍᴇᴍʙʀᴇ à ɴᴏᴍᴍᴇʀ.");
             }
         } else {
-            return repondre("Désolé, je ne peux pas effectuer cette action car vous n'êtes pas administrateur du groupe.");
+            return repondre("ᴅésᴏʟé, ᴊᴇ ɴᴇ ᴘᴇᴜx ᴘᴀs ᴇғғᴇᴄᴛᴜᴇʀ ᴄᴇᴛᴛᴇ ᴀᴄᴛɪᴏɴ ᴄᴀʀ ᴠᴏᴜs ɴ'êᴛᴇs ᴘᴀs ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴇᴜʀ ᴅᴜ ɢʀᴏᴜᴘᴇ.");
         }
     } catch (e) {
         repondre("Oups " + e);
@@ -313,7 +315,7 @@ zokou({ nomCom: "info", categorie: "Groupe" }, async (dest, zk, commandeOptions)
     const info = await zk.groupMetadata(dest);
     const mess = {
         image: { url: ppgroup },
-        caption: `*━━━━『Info du groupe』━━━━*\n\n*🎐Nom:* ${info.subject}\n\n*🔩ID du Groupe:* ${dest}\n\n*🔍Desc:* \n\n${info.desc}`
+        caption: `━━━━『ɪɴғᴏ ᴅᴜ ɢʀᴏᴜᴘᴇ』━━━━\n\n🎐ɴᴏᴍ: ${info.subject}\n\n🔩ɴᴏᴍ, ɪᴅ ᴅᴜ ɢʀᴏᴜᴘᴇ: ${dest}\n\n🔍ᴅᴇsᴄ: \n\n${info.desc}`
     };
 
     zk.sendMessage(dest, mess, { quoted: ms });
@@ -386,23 +388,23 @@ zokou({ nomCom: "antibot", categorie: "Groupe", reaction: "🔗" }, async (dest,
 
             if (arg[0] === 'oui') {
                 if (enetatoui) {
-                    repondre("l'antibot est déjà activé pour ce groupe");
+                    repondre("ʟ'ᴀɴᴛɪʙᴏᴛ ᴇsᴛ ᴅéᴊà ᴀᴄᴛɪᴠé ᴘᴏᴜʀ ᴄᴇ ɢʀᴏᴜᴘᴇ");
                 } else {
                     await atbajouterOuMettreAJourJid(dest, "oui");
-                    repondre("l'antibot est activé avec succès");
+                    repondre("ʟ'ᴀɴᴛɪʙᴏᴛ ᴇsᴛ ᴀᴄᴛɪᴠé ᴀᴠᴇᴄ sᴜᴄᴄès");
                 }
             } else if (arg[0] === "non") {
                 if (enetatoui) {
                     await atbajouterOuMettreAJourJid(dest, "non");
-                    repondre("L'antibot a été désactivé avec succès");
+                    repondre("ʟ'ᴀɴᴛɪʙᴏᴛ ᴀ éᴛé ᴅésᴀᴄᴛɪᴠé ᴀᴠᴇᴄ sᴜᴄᴄès");
                 } else {
-                    repondre("l'antibot n'est pas activé pour ce groupe");
+                    repondre("ʟ'ᴀɴᴛɪʙᴏᴛ ɴ'ᴇsᴛ ᴘᴀs ᴀᴄᴛɪᴠé ᴘᴏᴜʀ ᴄᴇ ɢʀᴏᴜᴘᴇ");
                 }
             } else if (arg.join('').split("/")[0] === 'action') {
                 let action = (arg.join('').split("/")[1]).toLowerCase();
                 if (['retirer', 'warn', 'supp'].includes(action)) {
                     await atbmettreAJourAction(dest, action);
-                    repondre(`l'action de l'antibot a été actualisée sur ${action}`);
+                    repondre(`ʟ'ᴀᴄᴛɪᴏɴ ᴅᴇ ʟ'ᴀɴᴛɪʙᴏᴛ ᴀ éᴛé ᴀᴄᴛᴜᴀʟɪséᴇ sᴜʀ ${action}`);
                 } else {
                     repondre('Les seules actions sont *warn*, *supp* et *retirer*');
                 }
@@ -532,13 +534,13 @@ zokou({ nomCom: "apk", reaction: "✨", categorie: "Recherche" }, async (dest, z
         }
 
         const downloadLink = appData.dllink;
-        const captionText =
-            "『 *Hacking-Md App* 』\n\n*Nom :* " + appData.name +
-            "\n*Id :* " + appData["package"] +
-            "\n*Dernière MAJ :* " + appData.lastup +
-            "\n*Taille :* " + appData.size +
-            "\n";
-
+        const captionText =  
+            "『 sʜᴀᴅᴏᴡ-ᴍᴅ ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ 』\n\nɴᴏᴍ: " + appData.name +
+      "\nɪᴅ: " + appData["package"] +
+      "\nᴅᴇʀɴɪèʀᴇ ᴍᴀᴊ: " + appData.lastup +
+      "\nᴛᴀɪʟʟᴇ: " + appData.size +
+      "\n";
+        
         const apkFileName = (appData?.["name"] || "Downloader") + ".apk";
         const filePath = apkFileName;
 

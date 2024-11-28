@@ -510,6 +510,206 @@ zokou({ nomCom: "gpp", categorie: "Groupe" }, async (dest, zk, commandeOptions) 
     }
 });
 
+zokou({nomCom:"annonce",categorie:"Groupe",reaction:"🎤"},async(dest,zk,commandeOptions)=>{
+
+
+const {ms,repondre,msgRepondu,verifGroupe,prefixe,arg}=commandeOptions;
+
+
+if(!verifGroupe){return repondre("Pour les groupes uniquement ⛔");}
+
+const infoGroupe=verifGroupe?await zk.groupMetadata(dest).catch((e)=>{console.log(e);}):"";
+
+
+const membres =verifGroupe?infoGroupe.participants:{}
+
+if(!msgRepondu && !arg.join(" "))
+{
+ // return repondre(${prefixe}annonce Salut comment allez vous ?);
+  const txt =${prefixe}annonce Salut comment allez vous ?
+ await zk.sendMessage(dest,{text:txt})
+}
+
+try{
+
+           /*const isTextRpd=msgRepondu.extendedTextMessage?.text?true:false;
+
+const textRpd =isTextRpd?msgRepondu.extendedTextMessage?.text:"";
+
+const isVideoRpd =msgRepondu.videoMessage?true:false;
+const videoRpd =isVideoRpd?await zk.downloadAndSaveMediaMessage(msgRepondu.videoMessage):null;
+
+
+const titreVid =isVideoRpd?msgRepondu.videoMessage.caption:"";
+
+
+const isImgRpd=msgRepondu.imageMessage?true:false;
+
+const imgRpd=isImgRpd?await zk.downloadAndSaveMediaMessage(msgRepondu.imageMessage):null;
+
+const titreImg=isImgRpd?msgRepondu.imageMessag.caption:"";****
+
+         if(msgRepondu)
+            {
+
+    /** *********^^^^^^^^^^^^/ ///////////////////////////////////////////
+             
+           const isTextRpd=msgRepondu.extendedTextMessage?.text?true:false;
+
+const textRpd =isTextRpd?msgRepondu.extendedTextMessage?.text:"";
+
+const isVideoRpd =msgRepondu.videoMessage?true:false;
+const videoRpd =isVideoRpd?await zk.downloadAndSaveMediaMessage(msgRepondu.videoMessage):null;
+
+
+const titreVid =isVideoRpd?msgRepondu.videoMessage.caption:"";
+
+
+const isImgRpd=msgRepondu.imageMessage?true:false;
+
+const imgRpd=isImgRpd?await zk.downloadAndSaveMediaMessage(msgRepondu.imageMessage):null;
+
+const titreImg=isImgRpd?msgRepondu.imageMessage.caption:"";
+              
+      ////////////        
+
+              
+
+              
+if(isImgRpd)
+                  { 
+                     await zk.sendMessage(dest,{image:{url:imgRpd},caption:titreImg,mentions:membres.map((i)=>i.id)},{quoted:ms})
+                   }else    if(isVideoRpd)
+{
+     await zk.sendMessage(dest,   {video:  {url:videoRpd},caption:titreVid,mentions:membres.map((i)=>i.id)},{quoted:ms})  
+}else if(isTextRpd)
+{ 
+
+  /*repondre(msgRepondu.extendedTextMessage?.text) ****
+  
+   await zk.sendMessage(dest,{text:textRpd,mentions:membres.map((i)=>i.id)})
+}
+
+}else if(arg.join(" "))
+{ 
+    const txt =arg.join(" ")
+      await zk.sendMessage(dest,{text:txt,mentions:membres.map((i)=>i.id)})
+} else { repondre("que dois-je annoncer svp") }
+
+
+}catch(e){return repondre("oups une erreur : "+e);}
+
+
+});
+ */
+
+ zokou({nomCom:"annonce",categorie:"Groupe",reaction:"🎤"},async(dest,zk,commandeOptions)=>{
+
+
+  const {repondre,msgRepondu,verifGroupe,arg ,verifAdmin , superUser}=commandeOptions;
+
+  if(!verifGroupe)  { repondre('Cette commande n\' est possible que dans les groupes ')} ;
+  if (verifAdmin || superUser) { 
+
+  let metadata = await zk.groupMetadata(dest) ;
+
+  //console.log(metadata.participants)
+ let tag = [] ;
+  for (const participant of metadata.participants ) {
+
+      tag.push(participant.id) ;
+  }
+  //console.log(tag)
+
+    if(msgRepondu) {
+      console.log(msgRepondu)
+      let msg ;
+    if (msgRepondu.imageMessage) {
+
+        
+
+     let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.imageMessage) ;
+     // console.log(msgRepondu) ;
+     msg = {
+
+       image : { url : media } ,
+       caption : msgRepondu.imageMessage.caption,
+       mentions :  tag
+       
+     }
+    
+
+      } else if (msgRepondu.videoMessage) {
+
+        let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.videoMessage) ;
+
+        msg = {
+
+          video : { url : media } ,
+          caption : msgRepondu.videoMessage.caption,
+          mentions :  tag
+          
+        }
+
+      } else if (msgRepondu.audioMessage) {
+    
+        let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.audioMessage) ;
+       
+        msg = {
+   
+          audio : { url : media } ,
+          mimetype:'audio/mp4',
+          mentions :  tag
+           }     
+        
+      } else if (msgRepondu.stickerMessage) {
+
+    
+        let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage)
+
+        let stickerMess = new Sticker(media, {
+          pack: 'Hacking-tag',
+          type: StickerTypes.CROPPED,
+          categories: ["🤩", "🎉"],
+          id: "12345",
+          quality: 70,
+          background: "transparent",
+        });
+        const stickerBuffer2 = await stickerMess.toBuffer();
+       
+        msg = { sticker: stickerBuffer2 , mentions : tag}
+
+
+      }  else {
+          msg = {
+             text : msgRepondu.conversation,
+             mentions : tag
+          }
+      }
+
+    zk.sendMessage(dest,msg)
+         } else {
+
+        if(!arg || !arg[0]) { repondre('Entrez le texte a annoncer ou mentionner le message a annoncer') ; return} ;
+
+      zk.sendMessage(
+         dest,
+         {
+          text : arg.join(' ') ,
+          mentions : tag
+         }     
+      )
+    }
+
+} else {
+  repondre('Commande reservée au admins')
+}
+});
+
+
+
+
+
 // Command for APK search and download
 zokou({ nomCom: "apk", reaction: "✨", categorie: "Recherche" }, async (dest, zk, commandeOptions) => {
     const { repondre, arg, ms } = commandeOptions;

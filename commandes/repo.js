@@ -4,7 +4,7 @@ const { zokou } = require("../framework/zokou");
 
 zokou({ nomCom: "repo", catégorie:"Général", reaction: "🌏", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
   const githubRepo = 'https://api.github.com/repos/ShadowWrld/SHADOW-MD-BOT';
-  const img = 'https://telegra.ph/file/c9c0af94510158016f7c6.jpg';
+  const img = 'https://i.imgur.com/Rj3JuBi.jpeg';
 
   try {
     const response = await fetch(githubRepo);
@@ -21,20 +21,20 @@ zokou({ nomCom: "repo", catégorie:"Général", reaction: "🌏", nomFichier: __
       const releaseDate = new Date(data.created_at).toLocaleDateString('en-GB');
       const lastUpdateDate = new Date(data.updated_at).toLocaleDateString('en-GB');
 
-      const gitdata = `salut 👋 
+      const gitdata = `sᴀʟᴜᴛ 👋 
 ᴠᴏɪᴄɪ sʜᴀᴅᴏᴡ-ᴍᴅ.\n ᴛᴜ ᴅᴇᴘʟᴏʏᴇʀ ᴀ ᴘᴀʀᴛɪʀ ᴅᴜ ʀᴇᴘᴏ, sᴇssɪᴏɴ_ɪᴅ  ' https://habot.000webhostapp.com/ '
 
-╭───────────────────━┈⊷
+╭─────────────────━┈⊷
 │🗼 ʀᴇᴘᴏsɪᴛᴏʀʏ: ${data.html_url}
 │✨ sᴛᴀʀs: ${repoInfo.stars}
 │🧧 ғᴏʀᴋs: ${repoInfo.forks}
 │📅 ʀᴇʟᴇᴀsᴇ ᴅᴀᴛᴇ: ${releaseDate}
 │🕐 ᴜᴘᴅᴀᴛᴇ ᴏɴ: ${repoInfo.lastUpdate}
 │👨‍💻 ᴏᴡɴᴇʀ: sʜᴀᴅᴏᴡ-ᴡʀʟᴅ
-╰───────────────────━┈⊷
-╭───────────────────━┈⊷
-│  ᴍᴀᴅᴇ ᴡɪᴛʜ sʜᴀᴅᴏᴡ-ᴡʀʟᴅ
-╰───────────────────━┈⊷
+╰─────────────────━┈⊷
+╭─────────────────━┈⊷
+│  ᴍᴀᴅᴇ ᴡɪᴛʜ ©sʜᴀᴅᴏᴡ-ᴡʀʟᴅ
+╰─────────────────━┈⊷
 `;
       await zk.sendMessage(dest, { image: { url: img }, caption: gitdata });
     } else {

@@ -4,9 +4,7 @@
 
   <h1 align="center">𝐒𝐇𝐀𝐃𝐎𝐖 𝐌𝐔𝐋𝐓𝐈 𝐃𝐄𝐕𝐈𝐂𝐄 </h1>
  </a>
- <div align="center">
- <img src="https://spogit.vercel.app/api?theme=dark&rainbow=true&scan=true" alt="Widget with the current Spotify song"  />
-</div>
+
 
 </p>
 <p align="center">

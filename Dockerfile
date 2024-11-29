@@ -12,7 +12,7 @@ RUN apt-get update && \
 
 # Clonage du dépôt GitHub
 RUN git clone https://github.com/ShadowWrld/SHADOW-MD-BOT /root/my_app
-j
+
 # Définition du répertoire de travail
 WORKDIR /root/my_app/
 

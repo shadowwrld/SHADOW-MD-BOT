@@ -58,8 +58,8 @@
 ##
 
 
-## Support 🧧 🧧 🧧 🧧
-> HOW TO REACH THE OWNER? 
+## 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🧧 🧧 🧧 🧧
+> ʜᴏᴡ ᴛᴏ ʀᴇᴀᴄʜ ᴛʜᴇ ᴏᴡɴᴇʀ? 
  
    
    <a href="https://wa.me/2250701557807">
@@ -71,30 +71,30 @@
 
 </p>
   
-## STEPS TO DEPLOY YOUR BOT
+## 𝐒𝐓𝐄𝐏𝐒 𝐓𝐎 𝐃𝐄𝐏𝐋𝐎𝐘 𝐘𝐎𝐔𝐑 𝐁𝐎𝐓
 
 
-> 1, Star the repo up there then click Here To  [`FORK`](https://github.com/ShadowWrld/SHADOW-MD-BOT/fork)
+> 1, sᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ ᴜᴘ ᴛʜᴇʀᴇ ᴛʜᴇɴ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ  [`FORK`](https://github.com/ShadowWrld/SHADOW-MD-BOT/fork)
 
-> 2, TAP ON GET SESSIONS
-
-
-> 3, CONNECT TO WHATSAPP WITH PAIRING CODE OR QR
+> 2, ᴛᴀᴘ ᴏɴ ɢᴇᴛ sᴇssɪᴏɴs
 
 
-> 4, TAP DEPLOY.., AND DEPLOY IT ON HEROKU...
+> 3, ᴄᴏɴɴᴇᴄᴛ ᴛᴏ ᴡʜᴀᴛsᴀᴘᴘ ᴡɪᴛʜ ᴘᴀɪʀɪɴɢ ᴄᴏᴅᴇ ᴏʀ ǫʀ
+
+
+> ᴛᴀᴘ ᴅᴇᴘʟᴏʏ.., ᴀɴᴅ ᴅᴇᴘʟᴏʏ ɪᴛ ᴏɴ ʜᴇʀᴏᴋᴜ...
 
 </p>
 
-## DEPLOIEMENT SUR RENDER
+## 𝐃𝐄𝐏𝐋𝐎𝐈𝐄𝐌𝐄𝐍𝐓 𝐒𝐔𝐑 𝐑𝐄𝐍𝐃𝐄𝐑
 
-> 1. Si vous n'avez pas de compte **Render**, cliquez [**Ici**](https://dashboard.render.com) pour vous inscrire.
-> 2. Créez un nouveau web service.
-> 3. Choisissez **Public Git Repository**.
-> 4. Dans le champ , Entrez `https://gitlab.com/bankai421341/senbonzakura.git`
-> 5. Cliquez sur **Connect**.
-> 6. Sélectionnez le **Free Plan** si vous ne voulez pas payer.
-> 7. Dans la section **Environemment Variable**, cliquez sur **Add From .env** et copiez le contenu suivant :
+> 1. sɪ ᴠᴏᴜs ɴ'ᴀᴠᴇᴢ ᴘᴀs ᴅᴇ ᴄᴏᴍᴘᴛᴇ *ʀᴇɴᴅᴇʀ*, ᴄʟɪǫᴜᴇᴢ [**Ici**](https://dashboard.render.com) ᴘᴏᴜʀ ᴠᴏᴜs ɪɴsᴄʀɪʀᴇ.
+> 2. ᴄʀéᴇᴢ ᴜɴ ɴᴏᴜᴠᴇᴀᴜ ᴡᴇʙ sᴇʀᴠɪᴄᴇ.
+> 3. ᴄʜᴏɪsɪssᴇᴢ *ᴘᴜʙʟɪᴄ ɢɪᴛ ʀᴇᴘᴏsɪᴛᴏʀʏ*.
+> 4. ᴅᴀɴs ʟᴇ ᴄʜᴀᴍᴘ , ᴇɴᴛʀᴇᴢ `https://gitlab.com/bankai421341/senbonzakura.git`
+> 5. ᴄʟɪǫᴜᴇᴢ sᴜʀ *ᴄᴏɴɴᴇᴄᴛ*.
+> 6. séʟᴇᴄᴛɪᴏɴɴᴇᴢ ʟᴇ *ғʀᴇᴇ ᴘʟᴀɴ* sɪ ᴠᴏᴜs ɴᴇ ᴠᴏᴜʟᴇᴢ ᴘᴀs ᴘᴀʏᴇʀ.
+> 7. ᴅᴀɴs ʟᴀ sᴇᴄᴛɪᴏɴ *ᴇɴᴠɪʀᴏɴᴇᴍᴍᴇɴᴛ ᴠᴀʀɪᴀʙʟᴇ, ᴄʟɪǫᴜᴇᴢ sᴜʀ **ᴀᴅᴅ ғʀᴏᴍ .ᴇɴᴠ* ᴇᴛ ᴄᴏᴘɪᴇᴢ ʟᴇ ᴄᴏɴᴛᴇɴᴜ sᴜɪᴠᴀɴᴛ :
 
      ```env
      PREFIXE=*
@@ -116,16 +116,16 @@
      ANTI_COMMAND_SPAM=non
       ```
 
-> 8. Cliquez sur **Add env** pour enregistrer, puis  odifiez selon vos besoins. N'oubliez pas d'entrer votre Session ID.
-> 9. Cliquez sur **Deploy Service** et Profitez-en !
+> 8. ᴄʟɪǫᴜᴇᴢ sᴜʀ *ᴀᴅᴅ ᴇɴᴠ* ᴘᴏᴜʀ ᴇɴʀᴇɢɪsᴛʀᴇʀ, ᴘᴜɪs ᴏᴅɪғɪᴇᴢ sᴇʟᴏɴ ᴠᴏs ʙᴇsᴏɪɴs. ɴ'ᴏᴜʙʟɪᴇᴢ ᴘᴀs ᴅ'ᴇɴᴛʀᴇʀ ᴠᴏᴛʀᴇ sᴇssɪᴏɴ ɪᴅ.
+> 9. ᴄʟɪǫᴜᴇᴢ sᴜʀ *ᴅᴇᴘʟᴏʏ sᴇʀᴠɪᴄᴇ* ᴇᴛ ᴘʀᴏғɪᴛᴇᴢ-ᴇɴ !
 
 </p>
 
-## **Déploiement GitHub**
+## 𝐃é𝐩𝐥𝐨𝐢𝐞𝐦𝐞𝐧𝐭 𝐆𝐢𝐭𝐇𝐮𝐛
        
-> 1. **Fork Le REPO**.
-> 2. Modifiez le fichier `exemple_de_set.env` en `set.env` et ajoutez-y votre **Session_ID**.
-> 3. Créez un nouveau fichier `.github/workflows/deploy.yml` et mettez-y ce contenu :
+> 1. ғᴏʀᴋ ʟᴇ ʀᴇᴘᴏ.
+> 2. ᴍᴏᴅɪғɪᴇᴢ ʟᴇ ғɪᴄʜɪᴇʀ `exemple_de_set.env` ᴇɴ `set.env` ᴇᴛ ᴀᴊᴏᴜᴛᴇᴢ-ʏ ᴠᴏᴛʀᴇ sᴇssɪᴏɴ_ɪᴅ.
+> 3. ᴄʀéᴇᴢ ᴜɴ ɴᴏᴜᴠᴇᴀᴜ ғɪᴄʜɪᴇʀ `.github/workflows/deploy.yml` ᴇᴛ ᴍᴇᴛᴛᴇᴢ-ʏ ᴄᴇ ᴄᴏɴᴛᴇɴᴜ :
 
 ```yml
 name: Node.js CI
@@ -177,18 +177,18 @@ jobs:
 
 </p>
 
-## Contributions
+## 𝐂𝐨𝐧𝐭𝐫𝐢𝐛𝐮𝐭𝐢𝐨𝐧𝐬
 
-> Les contributions à Shadow sont les bienvenues ! Si vous avez des idées pour de nouvelles fonctionnalités, des améliorations ou des corrections de bogues, n'hésitez pas à ouvrir une issue ou à soumettre une demande de pull.
-## THANKS TO [GOD]
+> ʟᴇs ᴄᴏɴᴛʀɪʙᴜᴛɪᴏɴs à sʜᴀᴅᴏᴡ sᴏɴᴛ ʟᴇs ʙɪᴇɴᴠᴇɴᴜᴇs ! sɪ ᴠᴏᴜs ᴀᴠᴇᴢ ᴅᴇs ɪᴅéᴇs ᴘᴏᴜʀ ᴅᴇ ɴᴏᴜᴠᴇʟʟᴇs ғᴏɴᴄᴛɪᴏɴɴᴀʟɪᴛés, ᴅᴇs ᴀᴍéʟɪᴏʀᴀᴛɪᴏɴs ᴏᴜ ᴅᴇs ᴄᴏʀʀᴇᴄᴛɪᴏɴs ᴅᴇ ʙᴏɢᴜᴇs, ɴ'ʜésɪᴛᴇᴢ ᴘᴀs à ᴏᴜᴠʀɪʀ ᴜɴᴇ ɪssᴜᴇ ᴏᴜ à sᴏᴜᴍᴇᴛᴛʀᴇ ᴜɴᴇ ᴅᴇᴍᴀɴᴅᴇ ᴅᴇ ᴘᴜʟʟ.
+## 𝐓𝐇𝐀𝐍𝐊𝐒 𝐓𝐎 [𝐆𝐎𝐃]
                 
-## Licence
+## 𝐋𝐢𝐜𝐞𝐧𝐜𝐞
 
-> Le Bot WhatsApp *SHADOW-MD* est publié sous la [Licence MIT](https://opensource.org/licenses/MIT).
+> ʟᴇ ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ sʜᴀᴅᴏᴡ-ᴍᴅ ᴇsᴛ ᴘᴜʙʟɪé sᴏᴜs ʟᴀ [Licence MIT](https://opensource.org/licenses/MIT).
 
-> Profitez des fonctionnalités variées du Bot WhatsApp *SHADOW-MD* pour améliorer vos conversations et rendre votre expérience WhatsApp plus intéressante !
+> ᴘʀᴏғɪᴛᴇᴢ ᴅᴇs ғᴏɴᴄᴛɪᴏɴɴᴀʟɪᴛés ᴠᴀʀɪéᴇs ᴅᴜ ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ sʜᴀᴅᴏᴡ-ᴍᴅ ᴘᴏᴜʀ ᴀᴍéʟɪᴏʀᴇʀ ᴠᴏs ᴄᴏɴᴠᴇʀsᴀᴛɪᴏɴs ᴇᴛ ʀᴇɴᴅʀᴇ ᴠᴏᴛʀᴇ ᴇxᴘéʀɪᴇɴᴄᴇ ᴡʜᴀᴛsᴀᴘᴘ ᴘʟᴜs ɪɴᴛéʀᴇssᴀɴᴛᴇ !
 
 
-## Developpeur :
+## 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐩𝐞𝐮𝐫 :
  
-  [**🌹⃝⃞⃟𝚂𝙷𝙰𝙳𝙾𝚆𝄟✮͢≛⃝𝚆𝚁𝙻𝙳⃝⃞⃟🌹**](https://github.com/carlydopeboii/SHADOW-MD-BOT/)
+  [**༈𝐌𝐫.𝐒𝐇𝐀𝐃𝐎𝐖༈**](https://github.com/carlydopeboii/SHADOW-MD-BOT/)

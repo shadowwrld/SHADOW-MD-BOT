@@ -1,1 +1,25 @@
-'use strict';const _0x7d0cad=_0x1e42;(function(_0x458095,_0x5637fc){const _0x218872=_0x1e42,_0x27b96b=_0x458095();while(!![]){try{const _0x25591a=parseInt(_0x218872(0xd6))/0x1*(-parseInt(_0x218872(0xda))/0x2)+parseInt(_0x218872(0xcd))/0x3+-parseInt(_0x218872(0xd8))/0x4*(-parseInt(_0x218872(0xd1))/0x5)+-parseInt(_0x218872(0xe4))/0x6*(parseInt(_0x218872(0xd0))/0x7)+-parseInt(_0x218872(0xd4))/0x8*(parseInt(_0x218872(0xd5))/0x9)+parseInt(_0x218872(0xe5))/0xa+parseInt(_0x218872(0xe3))/0xb*(parseInt(_0x218872(0xce))/0xc);if(_0x25591a===_0x5637fc)break;else _0x27b96b['push'](_0x27b96b['shift']());}catch(_0x11a518){_0x27b96b['push'](_0x27b96b['shift']());}}}(_0x45f7,0x375b5));function _0x1e42(_0x1d011f,_0x5015f8){const _0x45f78a=_0x45f7();return _0x1e42=function(_0x1e42df,_0x20144e){_0x1e42df=_0x1e42df-0xcd;let _0x4b14fd=_0x45f78a[_0x1e42df];return _0x4b14fd;},_0x1e42(_0x1d011f,_0x5015f8);}Object['defineProperty'](exports,_0x7d0cad(0xdf),{'value':!![]});function _0x45f7(){const _0x343f51=['404080MLIjfX','380916eQbgiM','8813004tZpvOB','../framework/zokou','42MUmpyT','450bxVkMi','jwdzc','wdwlc','1572200IODKWO','9CkcSAc','13xLTJdF','\x20𝑯𝒆𝒂𝒍𝒕𝒉\x20𝒔𝒕𝒂𝒕𝒖𝒔✨','6592UfTXXD','LcPiF','32906LVHpxN','Commande\x20saisie\x20!!!','mon\x20test','https://telegra.ph/file/ce58cf8c538b1496fda33.mp4','*ʟᴇ\x20ʙᴏᴛ\x20ᴛʀᴀᴠᴀɪʟʟᴇ\x20ᴀᴄᴛᴜᴇʟʟᴇᴍᴇɴᴛ\x20à\x20ᴜɴᴇ\x20ʙᴏɴɴᴇ\x20ᴠɪᴛᴇssᴇ\x20⚡*','__esModule','sendMessage','pBHAu','log','11pWsBfp','412962CPLyvl'];_0x45f7=function(){return _0x343f51;};return _0x45f7();}const {zokou}=require(_0x7d0cad(0xcf));zokou({'nomCom':'test','reaction':'🧒','nomFichier':__filename},async(_0x455f2e,_0x45afc4,_0x4bcb14)=>{const _0x2491ee=_0x7d0cad,_0xc1aa30={'jwdzc':function(_0x19a96c,_0x4a6a64){return _0x19a96c+_0x4a6a64;},'wdwlc':'*🌍ʙᴏᴛ\x20ɪs\x20ᴏɴʟɪɴᴇ🌍*\x20🙏\x20\x0a\x0a','pBHAu':_0x2491ee(0xde),'AbZYV':_0x2491ee(0xd7),'LcPiF':function(_0x348665,_0x4991d3){return _0x348665+_0x4991d3;},'QQuMF':_0x2491ee(0xdd)};console[_0x2491ee(0xe2)](_0x2491ee(0xdb));const _0x162ee6=_0xc1aa30[_0x2491ee(0xd2)](_0xc1aa30[_0x2491ee(0xd3)],_0xc1aa30[_0x2491ee(0xe1)]),_0x318e36=_0xc1aa30['AbZYV'],_0x36ae50=_0xc1aa30[_0x2491ee(0xd9)](_0x162ee6,_0x318e36),_0x4503ff=_0xc1aa30['QQuMF'];await _0x45afc4[_0x2491ee(0xe0)](_0x455f2e,{'video':{'url':_0x4503ff},'caption':_0x36ae50});}),console['log'](_0x7d0cad(0xdc));
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+
+const { zokou } = require("../framework/zokou");
+
+zokou({ nomCom: "test", reaction: "🧒", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
+    console.log("Commande saisie !!!");
+
+    const z = '🌍ʙᴏᴛ ɪs ᴏɴʟɪɴᴇ🌍 🙏 \n\n' +
+              "ʟᴇ ʙᴏᴛ ᴛʀᴀᴠᴀɪʟʟᴇ ᴀᴄᴛᴜᴇʟʟᴇᴍᴇɴᴛ à ᴜɴᴇ ʙᴏɴɴᴇ ᴠɪᴛᴇssᴇ ⚡";
+
+    const d = '                                                                           𝑯𝒆𝒂𝒍𝒕𝒉 𝒔𝒕𝒂𝒕𝒖𝒔✨';
+
+    const varmess = z + d;
+
+    const mp4 = 'https://telegra.ph/file/ce58cf8c538b1496fda33.mp4';
+
+    await zk.sendMessage(dest, { video: { url: mp4 }, caption: varmess });
+
+    // Uncomment the line below if you need to log "montest"
+    // console.log("montest");
+});
+
+console.log("mon test");

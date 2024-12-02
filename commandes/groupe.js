@@ -1,4 +1,4 @@
-+obfuscate const { zokou } = require("../framework/zokou");
+const { zokou } = require("../framework/zokou");
 const { Sticker, StickerTypes } = require('wa-sticker-formatter');
 const { ajouterOuMettreAJourJid, mettreAJourAction, verifierEtatJid } = require("../bdd/antilien");
 const { atbajouterOuMettreAJourJid, atbverifierEtatJid, atbmettreAJourAction } = require("../bdd/antibot");

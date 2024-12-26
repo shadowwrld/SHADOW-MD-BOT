@@ -1,9 +1,9 @@
 {
-  "name":"Shadow-2.0",
-  "description":"bot whatsapp développé par shadow-wrld",
+  "name":"Zokou-2.0",
+  "description":"bot whatsapp développé par djalega++",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://i.imgur.com/Rj3JuBi.jpeg",
-  "repository":"https://github.com/ShadowWrld/SHADOW-MD-BOT",
+  "logo":"https://raw.githubusercontent.com/djalega8000/Zokou-2.0/main/Zokou.jpg",
+  "repository":"https://github.com/djalega8000/Zokou-2.0",
   "succes_url":"/",
   "stack":"container",
   "env":{

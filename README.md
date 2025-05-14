@@ -8,7 +8,7 @@
 
 </p>
 <p align="center">
-<a href="https://github.com/ShadowWrld"><img title="Author" src="https://img.shields.io/badge/Shadow-Wrld-black?style=for-the-badge&logo=Github"></a> <a href="https://wa.me/2250701557807"><img title="Author" src="https://img.shields.io/badge/CHAT US-black?style=for-the-badge&logo=whatsapp"></a>
+<a href="https://github.com/ShadowWrld"><img title="Author" src="https://img.shields.io/badge/Shadow-Wrld-black?style=for-the-badge&logo=Github"></a> <a href="https://wa.me/2250574092047"><img title="Author" src="https://img.shields.io/badge/CHAT US-black?style=for-the-badge&logo=whatsapp"></a>
 <p/>
 <p align="center">
 <a href="https://github.com/ShadowWrld?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/ShadowWrld?label=Followers&style=social"></a>
@@ -62,7 +62,7 @@
 > ʜᴏᴡ ᴛᴏ ʀᴇᴀᴄʜ ᴛʜᴇ ᴏᴡɴᴇʀ? 
  
    
-   <a href="https://wa.me/2250701557807">
+   <a href="https://wa.me/2250574092047">
     <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
   </a>&nbsp;&nbsp;
    <a
